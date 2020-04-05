@@ -59,6 +59,8 @@ public class NQueenSolver {
 		if (reply == JOptionPane.YES_OPTION) {
 			System.out.println("Searching for further solutions...");
 			return false;
+		}else {
+			System.exit(0);
 		}
 
 		return true;
