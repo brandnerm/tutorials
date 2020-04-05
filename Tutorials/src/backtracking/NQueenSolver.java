@@ -49,8 +49,6 @@ public class NQueenSolver {
 		}
 		
 		
-		
-
 		// Display Solution
 		solutionCounter++;
 		System.out.println("Solution #"+solutionCounter+":\n");
@@ -122,12 +120,17 @@ public class NQueenSolver {
 	}
 	
 	public void printBoard(){
+		System.out.println("   A B C D E F G H");
+		System.out.println("  _________________");
 		for(int i=0; i<board.length; i++){
+			System.out.print(board.length-i+"| ");
 			for(int j=0; j<board[0].length; j++){
 				System.out.print(board[i][j]+" ");
 			}
-			System.out.print("\n");
+			System.out.print("|"+(board.length-i)+"\n");
 		}
+		System.out.println("  -----------------");
+		System.out.println("   A B C D E F G H");
 		System.out.println("\n");
 	}
 	
