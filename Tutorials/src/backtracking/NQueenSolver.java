@@ -135,7 +135,7 @@ public class NQueenSolver {
 	}
 	
 	public static void main(String[] args) {
-		int nQ = 8;
+		int nQ = 7;
 		int dimX = 8;
 		int dimY = 8;
 		NQueenSolver solver = new NQueenSolver(nQ, dimX, dimY);
